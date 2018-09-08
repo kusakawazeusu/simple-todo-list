@@ -1,3 +1,9 @@
+# Test
+
+```
+npm run test
+```
+
 # API Document
 
 ## Model
@@ -42,7 +48,7 @@
 
 取得完整 Todo list。
 
-### Response Type : JSON
+### Response Model : List for items
 
 200: successful operation
 |Status Code|Description|
@@ -54,13 +60,13 @@
 
 取得單一 Todo item。
 
-### Parameters Type : Query String
+### Parameters Type: Query String
 
 | Param. Name | Description               |
 | ----------- | ------------------------- |
 | id          | Item id you want to fetch |
 
-### Response Type : JSON
+### Response Model : List for single item
 
 200: successful operation
 |Status Code|Description|
@@ -71,7 +77,7 @@
 
 ## POST /lists
 
- 新增一筆 Todo list。
+新增一筆 Todo list。
 
 ### Parameters Type : Request body
 
@@ -101,8 +107,9 @@
 ### Response Type : JSON
 
 200: successful operation
-|Status Code|Description|
-|---|---|
-|200|Successful operation|
-|400|Bad input|
-|500|Error occurred while reading file|
+
+| Status Code | Description                       |
+| ----------- | --------------------------------- |
+| 200         | Successful operation              |
+| 400         | Bad input                         |
+| 500         | Error occurred while reading file |
