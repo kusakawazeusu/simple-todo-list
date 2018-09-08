@@ -1,5 +1,5 @@
 {
-  "next_index": 6,
+  "next_index": 5,
   "data": [
     { "id": 1, "todo": "Buy coffee", "checked": false },
     { "todo": "Coding", "id": 2, "checked": false },
