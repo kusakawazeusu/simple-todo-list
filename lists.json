@@ -1,0 +1,9 @@
+{
+  "next_index": 6,
+  "data": [
+    { "id": 1, "todo": "Buy coffee", "checked": false },
+    { "todo": "Coding", "id": 2, "checked": false },
+    { "todo": "Testing this", "id": 3, "checked": false },
+    { "todo": "Testing that", "id": 4, "checked": false }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "next_index": 2,
+  "data": [
+    {
+      "id": 1,
+      "todo": "Buy coffee",
+      "checked": false
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+.container {
+  height: 75vh;
+  width: 50vw;
+  margin: auto;
+  margin-top: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0.125em hsl(0, 0%, 86%);
+  overflow-x: scroll;
+}
+
+#todo-list {
+  border-collapse: collapse;
+  padding: 1em;
+  width: 100%;
+}
+
+#todo-list tr {
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+#todo-list tr:last-child {
+  border-bottom: 0;
+}
+
+#todo-list tr td {
+  padding: 1em;
+}
+
+#todo-list .checked td {
+  color: hsl(0, 0%, 86%);
+  text-decoration: line-through;
+}
+
+#newItem {
+  width: 85%;
+  height: 5vh;
+  border: none;
+  padding: 1em;
+}
+
+#newItem:focus {
+  outline: none;
+}
