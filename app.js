@@ -70,7 +70,7 @@ app.patch("/lists/:id", function(req, res) {
   res.send("OK");
 });
 
-var server = app.listen(3000, function() {
+var server = app.listen(8080, function() {
   // console.log("Server started at ", new Date());
 });
 

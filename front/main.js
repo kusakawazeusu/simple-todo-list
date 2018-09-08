@@ -9,15 +9,16 @@ window.onload = () => {
 
 function insertItem() {
   if (event.keyCode !== 13) return;
-  let input = document.querySelector("#newItem");
+  let inputValue = event.target.value;
+  event.target.value = "";
 
-  fetch("http://localhost:3000/lists", {
+  fetch("https://simple-todo-list-api.appspot.com/lists", {
     headers: {
       "Content-Type": "application/json"
     },
     method: "POST",
     body: JSON.stringify({
-      todo: input.value
+      todo: inputValue
     })
   })
     .then(response => {
@@ -25,14 +26,13 @@ function insertItem() {
     })
     .then(text => {
       if (text === "OK") {
-        input.value = "";
         loadList();
       }
     });
 }
 
 function loadList() {
-  return fetch("http://localhost:3000/lists")
+  return fetch("https://simple-todo-list-api.appspot.com/lists")
     .then(response => {
       return response.json();
     })
@@ -61,7 +61,7 @@ function loadList() {
 }
 
 function itemChecked(id) {
-  fetch(`http://localhost:3000/lists/${id}`, {
+  fetch(`https://simple-todo-list-api.appspot.com/lists/${id}`, {
     method: "PATCH"
   })
     .then(response => {

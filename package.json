@@ -4,7 +4,9 @@
   "description": "A to-do list api for interviewing intern position.",
   "main": "app.js",
   "scripts": {
-    "test": "mocha ./test/listTest.js"
+    "test": "mocha ./test/listTest.js",
+    "start": "node app.js",
+    "initiate": "rm lists.json && cp lists_default.json lists.json"
   },
   "author": "",
   "license": "ISC",
